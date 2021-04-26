@@ -1,9 +1,12 @@
 import HomeLayout from "../layout/homeLayout";
 import Award from "../components/Award";
 import Contact from "../components/Contact";
+import Icon from "@mdi/react";
+import { mdiBookOpenVariant } from "@mdi/js";
+
 export default function Home() {
   const item = [
-    { title: "EDUCATION" },
+    { title: "EDUCATION", icon: mdiBookOpenVariant },
     { title: "ENTERTAINMENT" },
     { title: "BUSINESS" },
     { title: "BOOKS" },
@@ -20,17 +23,17 @@ export default function Home() {
 
   const list = [
     {
-      title: "Project Requirements",
+      title: "Maintenance & Support",
       content: "Collect all the necessary requirement details and briefs from the client.",
       img: "/image/one.webp",
     },
     {
-      title: "Wireframing & Prototyping",
+      title: "Automation and Embedded systems",
       content: "Initiate the wireframing and prototype building of the product.",
       img: "/image/two.webp",
     },
     {
-      title: "Use Cases",
+      title: "Graphics design & Video Editing",
       content: "Prepare a use case draft containing all features and information on the app.",
       img: "/image/three.webp",
     },
@@ -61,7 +64,7 @@ export default function Home() {
     },
 
     {
-      title: "App Launch",
+      title: "full stack web development",
       content:
         "Once the app is tested in a closed group of testers, it is launched on the play store.",
       img: "/image/seven.webp",
@@ -76,11 +79,23 @@ export default function Home() {
   ];
 
   const app = [
-    { image: "/image/react.webp" },
-    { image: "/image/ionic.webp" },
+    { image: "/image/react.webp", title: "React js", link: "https://reactjs.org" },
+    { image: "/image/vue.png", title: "Vue js", link: "https://vuejs.org" },
 
-    { image: "/image/flutter.webp" },
-    { image: "/image/swift.webp" },
+    { image: "/image/next.png", link: "https://nextjs.org", title: "Next js" },
+    { image: "/image/tailwind.png", title: "tailwind css", link: "https://tailwindcss.com" },
+    { image: "/image/boostrap.png", link: "https://getbootstrap.com", title: "bootstrap" },
+    { image: "/image/quasar.png", title: "Quasar", link: "https://quasar.dev" },
+
+    { image: "/image/vuetify.png", title: "Vuetify", link: "https://vuetifyjs.com" },
+    {
+      image: "/image/ts.png",
+      title: "TS && JS",
+      link: "https://www.typescriptlang.org",
+      link2: "https://javascript.info",
+    },
+    { image: "/image/node.png", title: "Node.js", link: "https://nodejs.org/en" },
+    { image: "/image/graphql.png", title: "GraphQl", link: "https://graphql.org" },
   ];
   return (
     <HomeLayout>
@@ -93,13 +108,13 @@ export default function Home() {
             <div className="flex flex-wrap ">
               <div className="  w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 overflow-hidden md:px-10 sm:px-30 lg:px-32">
                 <div className="lg:pt-40 xl:pt-40">
-                  <h2 className=" lg:text-4xl tracking-wide md:text-5xl text-2xl font-bold text-center md:text-center lg:text-left">
-                    Expand Your Reach by Choosing World-Class iOS App Development Services
+                  <h2 className=" lg:text-4xl tracking-wide capitalize md:text-5xl text-2xl font-bold text-center md:text-center lg:text-left">
+                    Click network solutions
                   </h2>
 
                   <h2 className="pt-7 tracking-wide text-2xl text-center md:text-center lg:text-left">
-                    Elevate Your Business with Premium iOS Applications Built Using Swift &
-                    Objective C.
+                    We provide tech internship trainings for internship/ bootcamp students eager to
+                    grow or enchance skills in different information technology fields.
                   </h2>
 
                   <div
@@ -108,10 +123,11 @@ export default function Home() {
                   >
                     <div className="inline-block mr-2 mt-2">
                       <button
+                        style={{ backgroundColor: "#b9221b" }}
                         type="button"
-                        className="focus:outline-none tracking-widest text-lg w-40 capitalize text-white  py-2.5 px-5  rounded-md bg-blue-500 hover:bg-blue-400"
+                        className="focus:outline-none tracking-widest text-lg w-40 capitalize text-white  py-2.5 px-5  rounded-md hover:bg-blue-400"
                       >
-                        let discuss
+                        learn more
                       </button>
                     </div>
                   </div>
@@ -134,24 +150,33 @@ export default function Home() {
 
         <div className="pt-10">
           <div className="flex flex-wrap mx-3 overflow-hidden lg:px-32 md:px-4">
-            <div className="my-3 lg:px-20 px-5 w-full md:w-full  lg:w-1/2 overflow-hidden">
-              <h2 className="text-2xl lg:text-4xl md:text-3xl  tracking-widest font-semibold">
-                Are you in search of an iOS App Development company which could amplify your market
-                presence and broaden your reach to more Apple users?
+            <div className="my-3 lg:px-20 px-5   w-full md:w-full  lg:w-1/2 overflow-hidden">
+              <h1 className="text-center font-bold text-2xl pb-3">COMPANY PROFILE</h1>
+              <h2 className="text-lg lg:text-lg   md:text-lg    tracking-widest ">
+                CLICK NETWORK SOLUTIONS LIMITED is an indigenous ICT (information Communication
+                Technology) company incorporated under the laws of the federal republic of Nigeria.
+                It was incorporated on 14 October 2002 under the companies and Allied matters Act
+                1990. It has further met all other criteria by other enabling laws guiding the
+                regulation and setting up of such company. This company is committed to providing
+                cost effectives information technology and communication solutions to both
+                individuals and corporation organizations.
               </h2>
             </div>
 
             <div className="my-3 lg:px-20 px-5 w-full md:w-full  lg:w-1/2 overflow-hidden">
+              <h1 className="text-center font-bold text-2xl pb-3">MISSION STATEMENT</h1>
               <h2 className="tracking-wide">
-                At Origami Studios, our experienced iOS app developers cater your business demands
-                exclusively while following the best practices and modern techniques of iOS app
-                development. By aiming a future-centric and result-driven approach you can only
-                expect robust iOS apps that improve brand awareness, increase consumer base and show
-                <br></br>
-                <br></br>
-                significant business growth. After performing deep research and analysis, the
-                developed iOS applications are not only visually captivating but also functionally
-                robust with engaging user-experiences and intuitive navigational flows.
+                Click Network Solution will provide its corporate customers both in the public and
+                private sectors, and the international community with innovative, premium Network
+                Support Solution, consulting services, and customized technology Training and
+                advisory Service. We have customers and support sites in 6 African countries
+                including Sierra lone, Congo, Democratic, Morocco, Liberia, cote-voire, and Ghana
+                and local partner Network. At Click Network Solutions, we recognize the impact and
+                importance of information technology both in the public and private sectors. Large
+                public sector organizations are exploring veritable ways to reduce the high cost of
+                ICT ownership as address the issue of obsolescence. Click Network solutions offers
+                an outsourcing solution to ease the burden of public and private sector organization
+                seeking to reduce run away IT expenditure.
               </h2>
               <div
                 className="inline-block mr-2 mt-5 pb-10"
@@ -159,10 +184,11 @@ export default function Home() {
               >
                 <div className="inline-block mr-2 mt-2">
                   <button
+                    style={{ backgroundColor: "#b9221b" }}
                     type="button"
-                    className="focus:outline-none  text-lg w-40 capitalize text-white  py-2.5 px-5  rounded-md bg-blue-500 hover:bg-blue-400"
+                    className="focus:outline-none  text-lg w-40 capitalize text-white  py-2.5 px-5  rounded-md hover:bg-blue-400"
                   >
-                    let discuss
+                    learn more
                   </button>
                 </div>
               </div>
@@ -170,7 +196,7 @@ export default function Home() {
           </div>
         </div>
         {/*  */}
-        <div>
+        {/* <div>
           <div className="text-center p-5">
             <h2 className="font-bold lg:& md:text-4xl text-2xl">
               Customer-Centric iOS App Development Services
@@ -188,13 +214,7 @@ export default function Home() {
                 <div className="my-3 px-3  w-full md:w-full lg:w-1/3 overflow-hidden" key={index}>
                   <div className="bg-gray-50 h-16">
                     <div className="flex   text-black text-sm font-bold  py-3 lg:mx-36 mx-10">
-                      <svg
-                        className="w-4 h-4 mr-2"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z" />
-                      </svg>
+                      <Icon path={list.icon} size={1} horizontal vertical color="red" />
                       <p className="tracking-wide">{list.title}</p>
                     </div>
                   </div>
@@ -215,11 +235,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/*  */}
         <div>
           <h2 className="text-center text-3xl tracking-wide md:text-4xl lg:text-4xl font-bold pt-5 pb-10">
-            Explore some of our impressive iOS App Development projects
+            Interested in doing your SIWES with us?
           </h2>
 
           <div className="lg:px-32 md:px-20 ">
@@ -230,13 +250,13 @@ export default function Home() {
 
               <div className="my-3 px-3 md:w-full w-full lg:w-1/2 overflow-hidden">
                 <div className="lg:px-10 text-center md:text-center lg:text-left">
-                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide ">
-                    GMDY – A digital platform for sports lovers to shop their favorite sports wear
-                    and connect with others
+                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide text-center ">
+                    What We Do
                   </h1>
                   <h2 className="tracking-wide">
-                    Developed an interactive iOS application using Swift and Python with multiple
-                    features and pixel-perfect UI.
+                    We implement SIWES in a pragmatic manner to empower you to succeed in life. We
+                    equip students with the required industry attitude, skills, knowledge and
+                    experience to become more productive in today’s workplace.
                   </h2>
                 </div>
               </div>
@@ -256,13 +276,13 @@ export default function Home() {
               {/*  */}
               <div className="my-3 px-3 md:w-full w-full lg:w-1/2 overflow-hidden">
                 <div className="lg:px-10 text-center md:text-center lg:text-left">
-                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide">
-                    FitTogether – A socializing app that serves as a hub of fitness for fitness
-                    enthusiasts
+                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide text-center">
+                    Find your path and your calling.
                   </h1>
                   <h2 className="tracking-wide">
-                    Developed an iOS application for FitTogether using Swift. User Testing was
-                    conducted and ensured smooth functioning of each feature.
+                    Our goal is to prepare undergraduates for the IT industry both locally and
+                    internationally in such a manner as to become employer’s preferred choice for
+                    jobs.
                   </h2>
                 </div>
               </div>
@@ -286,12 +306,13 @@ export default function Home() {
 
               <div className="my-3 px-3 md:w-full w-full lg:w-1/2 overflow-hidden">
                 <div className="lg:px-10 text-center md:text-center lg:text-left">
-                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide">
-                    Aplica – A digital platform for students interested in studying abroad
+                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide text-center">
+                    What makes us different?
                   </h1>
                   <h2 className="tracking-wide">
-                    Developed an iOS application for Aplica using PHP while keeping the factors like
-                    ease-of-use, app security and data integrity on priority.
+                    We train SIWES Students of different technical abilities in a holistic way.We
+                    focus on both technical proficiency and personal growth to ensure that students
+                    become effective learners, contributors, well rounded employees and leaders.
                   </h2>
                 </div>
               </div>
@@ -311,13 +332,12 @@ export default function Home() {
               {/*  */}
               <div className="my-3 px-3 md:w-full w-full lg:w-1/2 overflow-hidden">
                 <div className="lg:px-10 text-center md:text-center lg:text-left">
-                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide">
-                    Kikkle – A loyalty app that allows user to redeem rewards and offers from
-                    selected restaurants, bars etc
+                  <h1 className="lg:pt-60 font-bold text-2xl pb-2 tracking-wide text-center">
+                    Why choose click network solutions
                   </h1>
                   <h2 className="tracking-wide">
-                    Developed an iOS application for Kikkle using Swift and ensured its quality with
-                    detailed testing.
+                    We are an innovation-driven enterprise providing IT solutions that are scalable,
+                    proven, secure, easy to use with support provided.
                   </h2>
                 </div>
               </div>
@@ -335,8 +355,9 @@ export default function Home() {
         >
           <div className="inline-block mr-2 mt-2">
             <button
+              style={{ backgroundColor: "#b9221b" }}
               type="button"
-              className="focus:outline-none  text-lg tracking-wide capitalize text-white  py-2.5 px-5  rounded-md bg-blue-500 hover:bg-blue-400"
+              className="focus:outline-none  text-lg tracking-wide capitalize text-white  py-2.5 px-5  rounded-md  hover:bg-blue-400"
             >
               create your success story
             </button>
@@ -348,7 +369,7 @@ export default function Home() {
         <div>
           <div className="text-center p-5">
             <h2 className="font-bold lg:& md:text-4xl text-2xl tracking-wide">
-              Our iOS App Development Process
+              INTENSIVE TRAINING ON
             </h2>
             <h2 className="pt-2 pb-5 tracking-wide">
               An experience ensuring best results, befitting your business needs.
@@ -372,12 +393,10 @@ export default function Home() {
                         <div className=" rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                           <div className="mb-8">
                             <div className="text-black font-bold text-xl mb-2 tracking-wide">
-                              Can coffee make you a better developer?
+                              {item.title}
                             </div>
                             <p className="text-grey-darker text-base tracking-wide">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                              quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-                              nihil.
+                              {item.content}
                             </p>
                           </div>
                         </div>
@@ -400,7 +419,7 @@ export default function Home() {
             <div className="relative z-30 w-full  py-8  md:py-10 ">
               <div>
                 <h1 className="text-center lg:text-5xl md:text-3xl text-3xl font-bold tracking-wide">
-                  Our iOS App Development Toolkit
+                  Our Design & Development Toolkit
                 </h1>
               </div>
 
@@ -412,8 +431,13 @@ export default function Home() {
                       key={index}
                       style={{ display: "flex", justifyContent: "center" }}
                     >
-                      <div className="w-10">
-                        <img src={item.image} alt="app_image" />
+                      <div className="w-20">
+                        <h2 className="font-bold text-center t">{item.title}</h2>
+
+                        <a href={item.link}>
+                          <img src={item.image} alt="app_image" />
+                        </a>
+                        <div style={{ display: "flex", justifyContent: "center" }}></div>
                       </div>
                     </div>
                   ))}
@@ -427,7 +451,8 @@ export default function Home() {
                 <div className="inline-block mr-2 mt-2">
                   <button
                     type="button"
-                    className="focus:outline-none tracking-wide text-lg  capitalize text-white  py-2.5 px-5  rounded-md bg-blue-500 hover:bg-blue-400"
+                    style={{ backgroundColor: "#b9221b" }}
+                    className="focus:outline-none tracking-wide text-lg  capitalize text-white  py-2.5 px-5  rounded-md  hover:bg-blue-400"
                   >
                     contact with us
                   </button>
@@ -445,42 +470,24 @@ export default function Home() {
                     <div className="my-3 px-3 md:w-full w-full lg:w-1/2 overflow-hidden">
                       <div className="lg:px-10 text-center md:text-center lg:text-left">
                         <h1 className="lg:pt-24 font-bold md:text-3xl text-2xl lg:text-4xl pb-2 tracking-wide">
-                          We Cater all iOS Devices
+                          Applications are now open
                         </h1>
-                        <h2 className="tracking-wide">
-                          Our services do not limit to only iPhone application development. Whether
-                          its a fitness app, gaming app or a business app, with professional iOS
-                          application development services, our team is geared up with the latest
-                          domain that incorporates all Apple devices.
+                        <h2 className="tracking-wide pb-5">We are now taking SIWES applications</h2>
+                        <h2 className="tracking-wide pb-5">
+                          Participants are 80% more likely to secure immediate
                         </h2>
-                        <div className="flex flex-wrap -mx-2 overflow-hidden">
-                          <div className="my-2 px-2 w-1/3 overflow-hidden font-bold tracking-wide">
-                            i phone
-                          </div>
+                        <h2 className="tracking-wide pb-5">
+                          employment after Graduating from University.
+                        </h2>
 
-                          <div className="my-2 px-2 w-1/3 overflow-hidden font-bold tracking-wide">
-                            i pad
-                          </div>
-
-                          <div className="my-2 px-2 w-1/3 overflow-hidden font-bold tracking-wide">
-                            mac book
-                          </div>
-
-                          <div className="my-2 px-2 w-1/3 overflow-hidden font-bold tracking-wide">
-                            Apple TV
-                          </div>
-
-                          <div className="my-2 px-2 w-1/3 overflow-hidden font-bold tracking-wide">
-                            Apple Watch
-                          </div>
-                        </div>
                         <div className="inline-block mr-2 mt-5 pb-10">
                           <div className="inline-block mr-2 mt-2">
                             <button
+                              style={{ backgroundColor: "#b9221b" }}
                               type="button"
-                              className="focus:outline-none  tracking-wide text-lg  capitalize text-white  py-2.5 px-5  rounded-md bg-blue-500 hover:bg-blue-400"
+                              className="focus:outline-none  tracking-wide text-lg  capitalize text-white  py-2.5 px-5  rounded-md  hover:bg-blue-400"
                             >
-                              SPEAK TO AN EXPERT
+                              APPLY NOW
                             </button>
                           </div>
                         </div>
@@ -503,7 +510,8 @@ export default function Home() {
               src="/image/bg.webp"
             />
           </div>
-          <Award />
+          {/* TODO  put testimony here */}
+          {/* <Award /> */}
           <Contact />
         </div>
       </div>

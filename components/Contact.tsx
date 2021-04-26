@@ -1,4 +1,6 @@
 import React from "react";
+import Icon from "@mdi/react";
+import { mdiBookOpenVariant, mdiGmail, mdiPhoneRemove, mdiGoogleMaps } from "@mdi/js";
 
 const Contact = () => {
   return (
@@ -25,19 +27,8 @@ const Contact = () => {
                     type="button"
                     className=" text-white text-lg tracking-wide py-2.5 px-5 rounded-md  flex items-center"
                   >
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-width="2"
-                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                      />
-                    </svg>
-                    kingdavidmiles@gmail.com
+                    <Icon path={mdiGmail} size={1} horizontal color="white" />
+                    theclicknetworksolutions@gmail.com
                   </button>
                 </div>
 
@@ -46,19 +37,17 @@ const Contact = () => {
                     type="button"
                     className=" text-white  tracking-wide text-lg py-2.5 px-5 rounded-md  flex items-center"
                   >
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-width="2"
-                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                      />
-                    </svg>
-                    +2349039172303
+                    <Icon path={mdiPhoneRemove} size={1} color="white" />
+                    +2349038240798
+                  </button>
+                </div>
+                <div className=" mr-2 mt-2">
+                  <button
+                    type="button"
+                    className=" text-white  tracking-wide text-lg py-2.5 px-5 rounded-md  flex items-center"
+                  >
+                    <Icon path={mdiGoogleMaps} size={1} color="white" />
+                    Sinady Oil Services Opposite Smile more, Umuahia Abia State
                   </button>
                 </div>
               </div>
@@ -68,7 +57,7 @@ const Contact = () => {
               <div className="flex flex-col justify-center sm:w-96 sm:m-auto mx-5 mb-5 space-y-8">
                 <form action="#">
                   <div className="flex flex-col bg-white p-10 rounded-lg shadow space-y-6">
-                    <h1 className="font-bold text-xl text-center">Contact us</h1>
+                    <h1 className="font-bold text-xl text-center">CONTACT CNS</h1>
 
                     <div className="flex flex-col space-y-1">
                       <input
@@ -98,7 +87,8 @@ const Contact = () => {
                     <div className="flex flex-col-reverse sm:flex-row sm:justify-between items-center">
                       <button
                         type="submit"
-                        className="bg-blue-500  w-full text-white font-bold px-5 py-2 rounded focus:outline-none shadow hover:bg-blue-700 transition-colors"
+                        style={{ backgroundColor: "#b9221b" }}
+                        className="  w-full text-white font-bold px-5 py-2 rounded focus:outline-none shadow hover:bg-blue-700 transition-colors"
                       >
                         submit
                       </button>
