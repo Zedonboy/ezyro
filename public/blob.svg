@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="blob.svg"
+   inkscape:version="1.0.2 (394de47547, 2021-03-26)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="848"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="3.46"
+     inkscape:cx="100"
+     inkscape:cy="95.51204"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     fill="#ff0066"
+     d="m 160.90887,30.280889 c 11.43722,8.536163 12.953,28.376974 19.4295,43.834349 6.3387,15.342023 17.50032,26.415962 19.0161,38.182032 1.51578,11.88141 -6.6143,24.33959 -13.0908,39.68162 -6.47649,15.22666 -11.29941,33.33717 -24.2524,35.9903 -12.953,2.76849 -34.03608,-9.80505 -51.94978,-14.4192 C 92.285578,168.8205 77.679008,172.0504 57.836124,172.51181 38.131037,173.08858 13.189634,171.01222 5.335159,160.39969 -2.3815184,149.78717 7.1265308,130.75383 8.6423066,112.41262 10.29588,94.071402 3.9571805,76.422309 10.020285,63.387358 16.083388,50.237053 34.410497,41.700891 52.599808,36.394627 c 18.189311,-5.306262 36.240826,-7.267272 55.945902,-9.574344 19.56729,-2.307071 40.92595,-5.075556 52.36316,3.460606 z"
+     id="path2"
+     style="stroke-width:1.26077" />
+</svg>

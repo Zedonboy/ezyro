@@ -8,9 +8,18 @@ const Navbar = () => {
     setActive(!active);
   };
 
+  const headerLinks = [
+    { text: "Home", to: "#" },
+    { text: "About Us", to: "#" },
+    { text: "Contact Us", to: "#" },
+  ];
+
   return (
     <>
-      <div style={{ backgroundColor: "#f8faff", color: "black" }} className="lg:px-32 ">
+      <div
+        style={{ backgroundColor: "#f8faff", color: "black" }}
+        className="lg:px-32 "
+      >
         <nav className="flex items-center flex-wrap  p-3 lg:mx-20">
           <Link href="/">
             {/* <img src={"/image/click.png"} alt="click logo" className="w-20 bg-gray-800" /> */}
@@ -22,7 +31,9 @@ const Navbar = () => {
               >
                 <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
               </svg>
-              <span className="text-xl  font-bold uppercase tracking-wide">Click</span>
+              <span className="text-xl  font-bold uppercase tracking-wide">
+                Click
+              </span>
             </a>
           </Link>
           <button
@@ -46,35 +57,18 @@ const Navbar = () => {
           </button>
           {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
           <div
-            className={`${active ? "" : "hidden"}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+            className={`${
+              active ? "" : "hidden"
+            }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
           >
             <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:justify-start   flex flex-col lg:h-auto">
-              <Link href="/">
-                <a className="lg:inline-flex tracking-widest lg:w-auto w-full px-3 py-2 rounded  font-bold  hover:bg-gray-900 items-center justify-center  hover:text-white ">
-                  {"<Home/>"}
-                </a>
-              </Link>
-              <Link href="/About">
-                <a className="lg:inline-flex lg:w-auto w-full tracking-widest px-3 py-2 rounded  font-bold items-center justify-center  hover:bg-gray-900 hover:text-white">
-                  {"<About/>"}
-                </a>
-              </Link>
-              <Link href="/Project">
-                <a className="lg:inline-flex lg:w-auto w-full tracking-widest px-3 py-2 rounded  font-bold items-center justify-center  hover:bg-gray-900 hover:text-white">
-                  {"<Project/>"}
-                </a>
-              </Link>
-              <Link href="">
-                <a className="lg:inline-flex lg:w-auto w-full tracking-widest px-3 py-2 rounded  font-bold items-center justify-center  hover:bg-gray-900 hover:text-white">
-                  {"<Contact us/>"}
-                </a>
-              </Link>
-
-              <Link href="https://www.crudloop.com/">
-                <a className="lg:inline-flex lg:w-auto tracking-widest w-full px-3 py-2 rounded  font-bold items-center justify-center  hover:bg-gray-900 hover:text-white">
-                  {"<Our team/>"}
-                </a>
-              </Link>
+              {headerLinks.flatMap((link) => (
+                <Link href={link.to}>
+                  <a className="lg:inline-flex lg:w-auto w-full tracking-widest px-3 py-2 rounded  font-bold items-center justify-center  hover:bg-gray-900 hover:text-white">
+                    {link.text}
+                  </a>
+                </Link>
+              ))}
             </div>
           </div>
         </nav>
