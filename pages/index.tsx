@@ -6,20 +6,17 @@ export default function Home() {
   const list = [
     {
       title: "Maintenance & Support",
-      content:
-        "Collect all the necessary requirement details and briefs from the client.",
+      content: "Collect all the necessary requirement details and briefs from the client.",
       img: "/image/one.webp",
     },
     {
       title: "Automation and Embedded systems",
-      content:
-        "Initiate the wireframing and prototype building of the product.",
+      content: "Initiate the wireframing and prototype building of the product.",
       img: "/image/two.webp",
     },
     {
       title: "Graphics design & Video Editing",
-      content:
-        "Prepare a use case draft containing all features and information on the app.",
+      content: "Prepare a use case draft containing all features and information on the app.",
       img: "/image/three.webp",
     },
 
@@ -32,22 +29,19 @@ export default function Home() {
 
     {
       title: "Project plan",
-      content:
-        "Following the agile methodology, divide app development into different sprints",
+      content: "Following the agile methodology, divide app development into different sprints",
       img: "/image/five.webp",
     },
 
     {
       title: "Development Phase",
-      content:
-        "App is moved to development phase where each use case is made functional.",
+      content: "App is moved to development phase where each use case is made functional.",
       img: "/image/six.webp",
     },
 
     {
       title: "Quality Assurance",
-      content:
-        "Manual and automated tests are performed to ensure the functionality of use cases.",
+      content: "Manual and automated tests are performed to ensure the functionality of use cases.",
       img: "/image/eight.webp",
     },
 
@@ -131,20 +125,15 @@ export default function Home() {
                   </h2>
 
                   <h2 className="pt-7 font-mono tracking-tight text-center md:text-center lg:text-left">
-                    We make it easy for you to do your SIWES in Nigeria - At
-                    Click Network Solutions, we recognize the impact and
-                    importance of information technology both in the public and
-                    private sectors.
+                    Inspired to Maximize Information Communication Technology Solutions at Click
+                    Network Solutions, we recognize the impact and importance of information
+                    technology both in the public and private sectors.
                   </h2>
                 </div>
               </div>
 
               <div className="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 ">
-                <Image
-                  src="/undraw_dev_productivity_umsq.svg"
-                  width="500"
-                  height="600"
-                />
+                <Image src="/undraw_dev_productivity_umsq.svg" width="500" height="600" />
               </div>
             </div>
           </div>
@@ -153,12 +142,12 @@ export default function Home() {
 
         <div>
           <div className="text-center p-5 mt-12">
-            <h2 className="font-bold lg:& md:text-4xl text-2xl tracking-wide">
-              INTENSIVE TRAINING ON
+            <h2 className="font-bold uppercase lg:& md:text-4xl text-1xl tracking-wide">
+              research <span className="text-red-300"> innovation </span>
+              <span>control</span>
             </h2>
             <h2 className="pt-2 pb-5 tracking-wide">
-              An experience ensuring best results, befitting your business
-              needs.
+              An experience ensuring best results, befitting your business needs.
             </h2>
           </div>
 
@@ -219,9 +208,7 @@ export default function Home() {
                     >
                       <div className="w-20">
                         <img src={item.image} alt="app_image" />
-                        <div
-                          style={{ display: "flex", justifyContent: "center" }}
-                        ></div>
+                        <div style={{ display: "flex", justifyContent: "center" }}></div>
                       </div>
                     </div>
                   ))}
@@ -247,9 +234,8 @@ export default function Home() {
                           Applications are now open
                         </h1>
                         <p className="tracking-wide pb-5">
-                          We are now taking SIWES applications Participants are
-                          80% more likely to secure immediate employment after
-                          Graduating from University.
+                          We are now taking SIWES applications Participants are 80% more likely to
+                          secure immediate employment after Graduating from University.
                         </p>
                       </div>
                     </div>

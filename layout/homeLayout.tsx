@@ -15,7 +15,6 @@ const MainLayout = (props: MainLayoutProps) => {
       <Head>
         <title>{title ?? "Click"}</title>
       </Head>
-
       <HomeLayout />
       <div className="Content">{children}</div>
       <Footer />

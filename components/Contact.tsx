@@ -1,11 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import Icon from "@mdi/react";
-import {
-  mdiBookOpenVariant,
-  mdiGmail,
-  mdiPhoneRemove,
-  mdiGoogleMaps,
-} from "@mdi/js";
+import { mdiGmail, mdiPhoneRemove, mdiGoogleMaps } from "@mdi/js";
 
 const listItems = [
   {
@@ -21,8 +17,21 @@ const listItems = [
     text: "Sinady Oil Services Opposite Smile more, Umuahia Abia State",
   },
 ];
+type Inputs = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<Inputs>();
+
+  const onSubmit = (data) => console.log(data);
   return (
     <div
       style={{
@@ -54,13 +63,11 @@ const Contact = () => {
               </div>
             </div>
             {/* form start here */}
-            <div className="lg:my-2 lg:px-2 md:px-2  w-full md:w-full lg:w-1/2 overflow-hidden">
-              <div className="flex flex-col justify-center sm:w-96 sm:m-auto mx-5 mb-5 space-y-8">
-                <form action="#">
+            <div className="lg:my-2 lg:px-2 md:px-2   w-full md:w-full lg:w-1/2 overflow-hidden">
+              <div className="flex flex-col justify-center sm:w-96 sm:m-auto mx-2 mb-5 space-y-8">
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="flex flex-col bg-white p-10 rounded-lg shadow space-y-6">
-                    <h1 className="font-bold text-xl text-center">
-                      CONTACT CNS
-                    </h1>
+                    <h1 className="font-bold text-xl text-center">CONTACT CNS</h1>
 
                     <div className="flex flex-col space-y-1">
                       <input

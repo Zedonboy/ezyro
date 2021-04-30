@@ -1,108 +1,46 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Link from "next/link";
-
-export default function Footer() {
-  interface IFooter {
-    title: string;
-    description: Array<{
-      name: string;
-      link: string;
-    }>;
-  }
-  const footers: IFooter[] = [
-    {
-      title: "About",
-      description: [
-        { name: "About us", link: "/about/" },
-        { name: "Our Vision", link: "/about/vision" },
-        { name: "Contact Us", link: "/contact" },
-      ],
-    },
-    {
-      title: "Social",
-      description: [
-        { name: "Twitter", link: "#" },
-        { name: "Facebook", link: "#" },
-      ],
-    },
-    {
-      title: "Sales",
-      description: [{ name: "Pricing Calculator", link: "/pricing/calculator" }],
-    },
-    {
-      title: "Legal",
-      description: [
-        { name: "Terms for humans", link: "/legal/terms" },
-        { name: "Privacy for humans", link: " /legal/privacy" },
-      ],
-    },
-  ];
-
-  const downloadStrimObj = [
-    {
-      type: "android",
-      img:
-        "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
-    },
-    // {
-    //   type: "ios",
-    //   img:
-    //     "https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png",
-    // },
-  ];
-
+import Icon from "@mdi/react";
+import { mdiInstagram, mdiFacebook, mdiTwitter, mdiWhatsapp } from "@mdi/js";
+const Footer = () => {
   return (
-    <Fragment>
-      {/* get started hero */}
-      <div className="bg-gray-50">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="block">Ready to dive in?</span>
-            <span className="block text-red-700">Create your account today.</span>
-          </h2>
-          <div className="mt-8 lex lg:mt-0 lg:flex-shrink-0">
-            <div className="inline-flex rounded-md shadow">
-              <Link href="/auth/signup/?ref=fooiio">
-                <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-500">
-                  Get started
-                </a>
+    <div className="" style={{ backgroundColor: "#f8faff", color: "black" }}>
+      <footer className="flex flex-wrap items-center justify-between p-3 m-auto">
+        <div className="container mx-auto flex flex-col flex-wrap items-center justify-between">
+          <ul className="flex mx-auto text-black text-center">
+            <li className="p-2 cursor-pointer">Terms & Conditions</li>
+            <li className="p-2 cursor-pointer ">Privacy</li>
+          </ul>
+          <ul className="flex mx-auto text-black text-center">
+            <li className="p-2 mx-3 cursor-pointer">
+              <Link href="https://twitter.com/kingdavidmiles">
+                <Icon path={mdiTwitter} size={1.5} color="skyblue" />
               </Link>
-            </div>
-            <div className="ml-3 inline-flex rounded-md shadow">
-              <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-white hover:bg-red-70">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* </get started hero> */}
+            </li>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 p-4 md:space-x-8 md:text-center text-left bg-gray-50">
-        <div className="hidden md:block text-left">
-          <img src={"/image/click.png"} className="h-11 w-56 object-contain" /> <br />
-          Bringing people together through live experiences
-        </div>
+            <li className="p-2 mx-3 cursor-pointer">
+              <Link href="https://www.instagram.com/kingdavidmiles">
+                <Icon path={mdiInstagram} size={1.5} color="red" />
+              </Link>
+            </li>
 
-        {footers.map((footer) => (
-          <div className="text-base">
-            <dt className="uppercase text-gray-700 font-extrabold font-mono leading-8">
-              {footer.title}
-            </dt>
-            <ul className="list-inside  text-gray-500 bg-rose-200 leading-loose mx-auto mb-5">
-              {footer.description.map((desc) => (
-                <li className="">
-                  <Link href={desc.link}>{desc.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-      <hr />
-      <div className="text-center my-5 font-mono mx-auto block font-medium text-sm rounded-md">
-        © 2020, click, Inc. All Rights Reserved.
-      </div>
-    </Fragment>
+            <li className="p-2 mx-3 cursor-pointer">
+              <Link href="https://www.facebook.com/david.olukwu">
+                <Icon path={mdiFacebook} size={1.5} color="blue" />
+              </Link>
+            </li>
+
+            <li className="p-2 mx-3 cursor-pointer">
+              <Link href="https://wa.link/xrdruw">
+                <Icon path={mdiWhatsapp} size={1.5} color="green" />
+              </Link>
+            </li>
+          </ul>
+          <small className="flex mx-auto text-black text-center">Copyright Click © 2021</small>
+        </div>
+      </footer>
+    </div>
   );
-}
+};
+
+export default Footer;
