@@ -125,7 +125,7 @@ export default function Home() {
                   </h2>
 
                   <h2 className="pt-7 font-mono tracking-tight text-center md:text-center lg:text-left">
-                    Inspired to Maximize Information Communication Technology Solutions at Click
+                    Inspired to Maximize Information Communication Technology Solutions. At Click
                     Network Solutions, we recognize the impact and importance of information
                     technology both in the public and private sectors.
                   </h2>
@@ -143,7 +143,7 @@ export default function Home() {
         <div>
           <div className="text-center p-5 mt-12">
             <h2 className="font-bold uppercase lg:& md:text-4xl text-1xl tracking-wide">
-              research <span className="text-red-300"> innovation </span>
+              research <span className="text-red-500"> innovation </span>
               <span>control</span>
             </h2>
             <h2 className="pt-2 pb-5 tracking-wide">

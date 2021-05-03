@@ -45,21 +45,26 @@ const Contact = () => {
             <div className="my-2 lg:px-5 md:px-5 px-4 lg:w-1/2 md:w-full w-full overflow-hidden">
               <div className="mt-12">
                 <h1 className="text-3xl text-white font-bold tracking-wide">
-                  Are you ready to build an ios app with a wow factor
+                  Are you ready to build a website with Click Network Solution
                 </h1>
                 <br></br>
-                <p className="text-white tracking-wide">
-                  Need dedicated ios developer or ios App developer service?
+                <p className="text-white tracking-wide capitalize">
+                  Need dedicated Computer Network, Website or Android App developer service?
                 </p>
                 <h2 className="text-white tracking-wide">let help you!</h2>
 
                 <div className=" mr-2 mt-2">
                   {listItems.flatMap((item) => (
-                    <p className="text-white text-lg tracking-wide py-1 rounded-md flex items-center">
-                      {item.icon} &nbsp; {item.text}
-                    </p>
+                    <div className="flex space-x-2 text-gray-400 text-sm my-3">
+                      {item.icon}
+                      <p className="text-white">{item.text}</p>
+                    </div>
                   ))}
                 </div>
+                {/* <div className="flex space-x-2 text-gray-400 text-sm my-3">
+                  <Icon path={mdiPhoneRemove} size={1} color="white" />
+                  <p className="text-white">+2349038240798</p>
+                </div> */}
               </div>
             </div>
             {/* form start here */}
