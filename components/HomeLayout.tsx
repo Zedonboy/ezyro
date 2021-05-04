@@ -19,10 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        style={{ backgroundColor: "#f8faff", color: "black" }}
-        className="lg:px-32  hover:bg-white"
-      >
+      <div className="lg:px-32  bg-transparent shadow-md">
         <nav className="flex items-center flex-wrap  p-3 lg:mx-20">
           <img src={"/image/logo1.png"} alt="click logo" className="w-28 " />
 
@@ -49,9 +46,9 @@ const Navbar = () => {
           <div
             className={`${active ? "" : "hidden"}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
           >
-            <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:justify-start   flex flex-col lg:h-auto">
+            <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:justify-start   flex flex-col lg:h-auto ">
               {headerLinks.flatMap((link) => (
-                <ul className="  lg:inline-flex lg:w-auto w-full tracking-widest px-3 py-2 rounded  font-bold items-center justify-center  hover:bg-red-900 hover:text-white">
+                <ul className="  lg:inline-flex lg:w-auto w-full tracking-widest px-3 py-2 rounded  font-bold items-center justify-center hover:bg-red-200">
                   <li>
                     <Link
                       href={link.to}
