@@ -140,7 +140,7 @@ export default function Home() {
           {/*  */}
         </div>
 
-        <div>
+        <div id="about">
           <div className="text-center p-5 mt-12">
             <h2 className="font-bold uppercase lg:& md:text-4xl text-1xl tracking-wide">
               research <span className="text-red-500"> innovation </span>
@@ -189,7 +189,7 @@ export default function Home() {
 
         {/*  */}
 
-        <div className="relative ">
+        <div className="relative " id="tools">
           <div className="flex ">
             <div className="relative z-30 w-full  py-8  md:py-10 ">
               <div>
@@ -264,7 +264,9 @@ export default function Home() {
           </div>
           {/* TODO  put testimony here */}
           {/* <Award /> */}
-          <Contact />
+          <div className="" id="contact">
+            <Contact />
+          </div>
         </div>
       </div>
     </HomeLayout>
