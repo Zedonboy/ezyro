@@ -13,7 +13,7 @@ const Footer = () => {
           </ul>
           <ul className="flex mx-auto text-black text-center">
             <li className="p-2 mx-3 cursor-pointer">
-              <Link href="https://twitter.com/kingdavidmiles">
+              <Link href="https://twitter.com/clicknetsoluti1">
                 <Icon path={mdiTwitter} size={1.5} color="skyblue" />
               </Link>
             </li>
