@@ -121,13 +121,11 @@ export default function Home() {
               <div className="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 overflow-hidden md:px-10 sm:px-30 lg:px-32">
                 <div className="lg:pt-40 xl:pt-40">
                   <h2 className=" lg:text-5xl tracking-wide capitalize md:text-5xl text-2xl font-bold text-center md:text-center lg:text-left">
-                    Click network solutions
+                    Ezyro
                   </h2>
 
                   <h2 className="pt-7 font-mono tracking-tight text-center md:text-center lg:text-left">
-                    Inspired to Maximize Information Communication Technology Solutions. At Click
-                    Network Solutions, we recognize the impact and importance of information
-                    technology both in the public and private sectors.
+                  At ezyro we are inspired to bring a client desired solution to all aspect of life using modern  technology to solve problems, We have a team of qualified individuals who works around the clock in other to make life user friendly.
                   </h2>
                 </div>
               </div>
@@ -228,7 +226,7 @@ export default function Home() {
                       <img src={"/image/dev.png"} alt="image" />
                     </div>
                     {/*  */}
-                    <div className="my-3 px-3 md:w-full w-full lg:w-1/2 overflow-hidden">
+                    {/* <div className="my-3 px-3 md:w-full w-full lg:w-1/2 overflow-hidden">
                       <div className="lg:px-10 text-center md:text-center lg:text-left">
                         <h1 className="lg:pt-24 font-bold md:text-3xl text-2xl lg:text-4xl pb-2 tracking-wide">
                           Applications are now open
@@ -238,7 +236,7 @@ export default function Home() {
                           secure immediate employment after Graduating from University.
                         </p>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* Vissible only on lg and xl */}
                     <div className="my-3 px-3 w-full lg:w-1/2 overflow-hidden pt-10">

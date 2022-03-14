@@ -6,15 +6,15 @@ import { mdiGmail, mdiPhoneRemove, mdiGoogleMaps } from "@mdi/js";
 const listItems = [
   {
     icon: <Icon path={mdiGoogleMaps} size={1} color="white" />,
-    text: "+2349038240798",
+    text: "+2349153648183",
   },
   {
     icon: <Icon path={mdiGmail} size={1} horizontal color="white" />,
-    text: "theclicknetworksolutions@gmail.com",
+    text: "Ezroltd@gmail.com",
   },
   {
     icon: <Icon path={mdiPhoneRemove} size={1} color="white" />,
-    text: "Sinady Oil Services Opposite Smile more, Umuahia Abia State",
+    text: "House D1, office 1 Dei dei timber complex Abuja",
   },
 ];
 type Inputs = {
@@ -45,7 +45,7 @@ const Contact = () => {
             <div className="my-2 lg:px-5 md:px-5 px-4 lg:w-1/2 md:w-full w-full overflow-hidden">
               <div className="mt-12">
                 <h1 className="text-3xl text-white font-bold tracking-wide">
-                  Are you ready to build a website with Click Network Solution
+                  Are you ready to build a website with Ezyro
                 </h1>
                 <br></br>
                 <p className="text-white tracking-wide capitalize">
@@ -72,7 +72,7 @@ const Contact = () => {
               <div className="flex flex-col justify-center sm:w-96 sm:m-auto mx-2 mb-5 space-y-8">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="flex flex-col bg-white p-10 rounded-lg shadow space-y-6">
-                    <h1 className="font-bold text-xl text-center">CONTACT CNS</h1>
+                    <h1 className="font-bold text-xl text-center">CONTACT Ezyro</h1>
 
                     <div className="flex flex-col space-y-1">
                       <input
