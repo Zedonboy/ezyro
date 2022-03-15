@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
       <div className="lg:px-32  bg-transparent shadow-md">
         <nav className="flex items-center flex-wrap  p-3 lg:mx-20">
-          <img src={"/image/logo1.png"} alt="click logo" className="w-28 " />
+          {/* <img src={"/image/logo1.png"} alt="click logo" className="w-28 " /> */}
 
           <button
             className=" inline-flex p-3 hover:bg-black-600 rounded lg:hidden  ml-auto"
