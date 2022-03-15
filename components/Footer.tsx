@@ -31,7 +31,7 @@ const Footer = () => {
             </li>
 
             <li className="p-2 mx-3 cursor-pointer">
-              <Link href="https://wa.link/xrdruw">
+              <Link href="#">
                 <Icon path={mdiWhatsapp} size={1.5} color="green" />
               </Link>
             </li>
